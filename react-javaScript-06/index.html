@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    
+    <section class="porfolio mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 ">
+                    <img src="images/courses_1.png" alt="" class="w-100 mb-4">
+                    <!-- <div class="price">
+                        <h3>$60</h3>
+                    </div> -->
+                    <h4 id="author">J Naeem</h4>
+                    <div class="rating">
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <p>4(2350)</p>
+                    </div>
+                    
+                    
+                    
+                    
+                    <p>javascript Developer</p>
+                    <p class="tit" id="title" style="text-decoration: none" ></p>
+                    <p id="tag"></p>
+                    <div class="lesson2">
+                        <i class='bx bx-book'></i>
+                        <span id="lessons">Lessons</span>
+                        <span >Lessons</span>
+                        <i class='bx bx-world' ></i>
+                        <span>online class</span>
+
+                    </div>
+                    
+
+
+                </div>
+
+                <div class="col-lg-4 col-md-6" col-md-6>
+                    <img src="images/courses_1.png" alt="" class="w-100 mb-4">
+                    <h4>image2</h4>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <img src="images/courses_1.png" alt="" class="w-100 mb-4">
+                    <h3>image3</h3>
+                </div>
+
+
+                
+            </div>
+        </div>
+    </section>
+
+    <script>
+
+        // let name="naeem"
+        // let email="naeem@gmail.com"
+        // let loc="Dhaka"
+        // console.log(name)
+        // console.log(email)
+
+
+
+    //     let student1={
+    //     name:"naeem",
+    //     email:"naeem@yahoo.com",
+    //     loc:"Dhaka"
+
+    // };
+    //     let student2={
+    //     name:"naimur",
+    //     email:"naeem@gmail.com",
+    //     loc:"Dhaka",
+    //     one:"a",
+    //     'email address':"naimur@hotmail"
+
+    // };
+
+    // student1.two="Hello js";
+    // delete student2.one;
+
+    // let email2='email address'
+    // console.log(student2[email2])
+
+    // console.log(student1.email)
+
+
+    
+    // function openwin(){
+    //     // window.open("https://www.youtube.com/watch?v=ubpBzpVEA4s&list=RDz4H1eXbnkKw&index=5");
+    // }
+
+    // let myWindow
+    // function openWin(){
+    //     myWindow= window.open("", "", "width=200, height=200");
+
+    // }
+    // function closewin(){
+    //     myWindow.close();
+    // }
+
+       let course1={
+        title: "Mern Stack Development",
+        thumbnail:"s",
+        authorImg: "authorImg",
+        totalRate: "totalRate",
+        price:"60",
+        author: "Naimur Naeem",
+        rate:"4",
+        tag: " MERN, React",
+        lessons: "30"
+
+
+       }
+       let authorName=course1.author
+       let title1=course1.title
+       let tag=course1.tag
+       let lessons=course1.lessons
+       document.getElementById("author").innerHTML = authorName;
+       document.getElementById("title").innerHTML = title1;
+       document.getElementById("tag").innerHTML = tag;
+       document.getElementById("lessons").innerHTML = lessons;
+       
+       document.getElementById("title") 
+                .style.fontWeight = "bold";
+
+
+     </script>
+
+    <!-- <input type="button" value="open window" onclick="openWin()">
+    <input type="button" value="close window" onclick="closewin()">
+    <button onclick="window.print()">print this page</button> -->
+
+
+
+</body>
+</html>
