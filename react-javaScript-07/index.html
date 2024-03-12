@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<!-- DOM= Document Object Model -->
+
+<!-- getElementById("");
+getElementByClassName("");
+getElementByName("");
+getElementByTagName("");
+querrySlector();
+querrySlectorall(); -->
+
+<!-- <p id="one"></p>
+<p class="cone">hello class1</p>
+<p class="cone">hello class2</p>
+<p class="cone">hello class3</p> -->
+
+<!-- <p name="pname"> Hello devs</p> -->
+
+<!-- <h1 > Heading tag1</h1>
+<h1 > Heading tag2</h1>
+<h1 > Heading tag3</h1> -->
+
+<!-- <h1 id="one"> Hello heading tag-1</h1>
+<h1 id="two"> Hello heading tag-2</h1> -->
+
+<!-- <input type="button" value="Click me" onclick="start()"> -->
+
+<!-- <p id="one"></p> -->
+<!-- <button onclick="disdate()">click me</button> -->
+<!-- <button ondblclick="disdate()">click me</button> -->
+
+<!-- <p>developer notice</p> -->
+
+<!-- <details id="myDetails" ontoggle="myfun()" > -->
+
+<!-- *****querry selector all ***-->
+
+<!-- <h1>The Document Object</h1>
+<h2>The querySelectorAll() Method</h2>
+
+<p>Add a background color all elements with class="example":</p>
+<h2 class="example">A heading</h2>
+<p class="example">A paragraph.</p>  -->
+
+
+
+<!-- ****Home work details tag*** -->
+<details open>
+    <summary><strong>summary</strong> text</summary>
+    Lorem ipsum dolor sit amet consectetur, adipisici......
+  </details>
+
+
+
+<!-- <details id="myDetails">
+    <summary>Copyright 2020-2024.</summary>
+    <p> - by java2s.com. All Rights Reserved.</p>
+    <p>All content on this web site are the property of the company.</p>
+  </details>
+  <button onclick="openDetails()">Open details</button>
+  <button onclick="closeDetails()">Close details</button> -->
+
+
+
+<script>
+    // document.getElementById("one")
+    // let idOne=document.getElementById("one")
+    // idOne.innerHTML=("Hellow js developer")
+
+    // let cone=document.getElementsByClassName("cone")[1]
+
+    // cone.innerHTML=("Hellow js class")
+
+    // let pname1 = document.getElementsByName("pname")[0];
+    
+    // pname1.innerHTML= ("hello pName");
+
+//    let h1tag= document.getElementsByTagName("H1")[1]
+//    h1tag.innerHTML = "Hello Heading tag"
+
+// let querrya = document.querySelector("#two");
+// querrya.innerHTML="querry"
+    
+
+// function start(){
+//     alert("you are welcome")
+// }
+
+
+// function disdate(){
+//     document.getElementById("one").innerHTML= Date()
+// }
+
+
+// const nodeList = document.querySelectorAll(".example");
+// for (let i = 0; i < nodeList.length; i++) {
+//   nodeList[i].style.backgroundColor = "green";
+// }
+
+// ****homeWork details tag*****
+
+function myfun(){
+    alert("this is toggle alert message")
+}
+function myfun2(){
+    alert("this is untoggle alert message")
+}
+
+
+const detailsElements = document.querySelectorAll('details')
+
+detailsElements.forEach((detail) => {
+  detail.addEventListener('toggle', () => {
+    if (detail.open) {
+        myfun();
+    } else {
+        myfun2();
+    }
+  })
+})
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
